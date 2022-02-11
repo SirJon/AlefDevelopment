@@ -7,11 +7,222 @@
     </head>
     <body class="page__body">
         <header class="header">
+            <nav class="header__nav user-nav">
+                <ul class="user-nav__list">
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">
+                            <span class="user-nav__logo">logo</span>
+                        </a>
+                    </li>
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">
+                            <svg class="user-nav__svg--user" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="8.45945" cy="4.18919" r="3.68919" stroke="#333333"/>
+                                <path d="M0.5 15.3379H15.5" stroke="#333333"/>
+                                <path d="M0.5 15.84C0.5 12.4347 4.84699 9.91339 8.21429 10.0023C11.4328 10.0872 15.5 12.4347 15.5 15.84" stroke="#333333"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">
+                            <svg class="user-nav__svg--like" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.89989 3.0948C6.69969 -2.52108 -2.59131 1.90389 1.76025 7.60175C6.11181 13.2996 8.3999 15.4908 8.3999 15.4908" stroke="#333333"/>
+                                <path d="M7.89409 3.0948C9.09429 -2.52108 18.7304 1.90389 14.3788 7.60175C10.0272 13.2996 7.69995 15.5 7.69995 15.5" stroke="#333333"/>
+                                <path d="M7.39099 2.70752L8.4043 2.70757L8.38337 3.24079H7.39099V2.70752Z" fill="#333333"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">
+                            <svg class="user-nav__svg--basket" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.25468 7.56595C1.13958 6.11201 2.2884 4.86865 3.74689 4.86865H12.2531C13.7116 4.86865 14.8604 6.11201 14.7453 7.56595L14.2203 14.1975C14.1174 15.4977 13.0323 16.5002 11.7281 16.5002H4.27189C2.96769 16.5002 1.88261 15.4977 1.77968 14.1975L1.25468 7.56595Z" stroke="#333333"/>
+                                <path d="M4.00005 9.5C4.00005 9.5 3.78335 1 8.00007 1C12.2168 1 12.0001 9.5 12.0001 9.5" stroke="#333333"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="user-nav__item">
+                        <button class="user-nav__button"></button>
+                    </li>
+                </ul>
+            </nav>
             <nav class="header__nav main-nav">
                 <ul class="main-nav__list">
-                    
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">Постельное белье</a>
+                    </li>
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">Одежда для дома</a>
+                    </li>
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">Одежда для улицы</a>
+                    </li>
+                    <li class="user-nav__item">
+                        <a class="user-nav__link" href="#">Выход</a>
+                    </li>
                 </ul>
             </nav>
         </header>
 
+        <main class="page__main">
+            <h1 class="page__title visually-hidden">Магазин одежды</h1>
+            <section class="product">
+                <img class="product__img--big-picture" src="img/picture1.jpeg" width="70px">
+                <nav class="product__nav">
+                    <ul class="product__list">
+                        <li class="product__item">
+                            <img class="product__img--small-picture" src="img/picture1.jpeg" width="70px">
+                        </li>
+                        <li class="product__item">
+                            <img class="product__img--small-picture" src="img/picture2.jpeg" width="70px">
+                        </li>
+                        <li class="product__item">
+                            <img class="product__img--small-picture" src="img/picture3.jpeg" width="70px">
+                        </li>
+                        <li class="product__item">
+                            <img class="product__img--small-picture" src="img/picture4.jpeg" width="70px">
+                        </li>
+                        <li class="product__item">
+                            <img class="product__img--small-picture" src="img/picture5.jpeg" width="70px">
+                        </li>
+                    </ul>
+                </nav>
+                <h2 class="product__title">Пижама для девочек</h2>
+                <span class="product__span--vendor-code"></span>
+                <div class="product__reviews">
+                    <h3 class="product__title--reviews">Отзывы</h3>
+                    <svg class="product__svg--rating">4 звезды</svg>
+                    <span class="product__span--reviews">14 отзывов</span>
+                    <a class="product__button" href="#">Все отзывы</a>
+                </div>
+                <div class="pruduct__price">
+                    <span class="product__span--new-price"></span>
+                    <span class="product__span--old-price"></span>
+                    <a class="product__button" href="#">Все скидки</a>
+                    <span class="product__span--sale">скидка -36%</span>
+                    <span class="product__span--promotion">акция -20%</span>
+                </div>
+                <select class="product__select">
+                    <option selected="selected">Выбрать размер</option>
+                    <option value="XS">XS</option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                </select>
+                <a class="product__link--size" href="#">Определить размер</a>
+                <div class="product__quantity-inner">        
+                    <button class="product__button--minus">-</button>
+                    <input type="text" class="product__input--quantity-inner" value="1" data-max-count="20">
+                    <button class="product__button--plus">+</button>
+                </div>
+                <div class="product__shop">
+                    <button class="product__button--add-basket">Добавить в корзину</button>
+                    <button class="product__button--add-favorites">
+                        <svg class="product__svg--favorites"></svg>
+                    </button>
+                </div>
+                <a class="product__link--one-click" href="#">Купить в 1 клик</a>
+                <ul class="product__list--info">
+                    <li class="product__item--description">
+                        <svg class="product__svg--description"></svg>
+                        <a class="product__link--description" href="#"></a>
+                    </li>
+                    <li class="product__item--delivery">
+                        <svg class="product__svg--delivery"></svg>
+                        <a class="product__link--delivery" href="#"></a>
+                    </li>
+                    <li class="product__item--payment">
+                        <svg class="product__svg--payment"></svg>
+                        <a class="product__link--payment" href="#"></a>
+                    </li>
+                </ul>
+            </section>
+            <a class="show-more">Посмотреть все стили</a>
+            <section class="gallery">
+                <ul class="gallery__list">
+                    <li class="gallery__item">
+                        <img src="img/img1.jpg" class="gallery__img" width="200px">
+                        <div class="gallery__div--info">
+                            <svg class="gallery__svg"></svg>
+                            <a class="gallery__link">Узнай, что на мне</a>
+                        </div>
+                        <div class="gallery__div--like">
+                            <svg class="gallery__svg"></svg>
+                            <span class="gallery__span--like">200</span>
+                        </div>
+                    </li>
+                    <li class="gallery__item">
+                        <img src="img/img2.jpg" class="gallery__img" width="200px">
+                        <div class="gallery__div--info">
+                            <svg class="gallery__svg"></svg>
+                            <a class="gallery__link">Узнай, что на мне</a>
+                        </div>
+                        <div class="gallery__div--like">
+                            <svg class="gallery__svg"></svg>
+                            <span class="gallery__span--like">200</span>
+                        </div>
+                    </li>
+                    <li class="gallery__item">
+                        <img src="img/img3.jpg" class="gallery__img" width="200px">
+                        <div class="gallery__div--info">
+                            <svg class="gallery__svg"></svg>
+                            <a class="gallery__link">Узнай, что на мне</a>
+                        </div>
+                        <div class="gallery__div--like">
+                            <svg class="gallery__svg"></svg>
+                            <span class="gallery__span--like">200</span>
+                        </div>
+                    </li>
+                    <li class="gallery__item">
+                        <img src="img/img4.jpg" class="gallery__img" width="200px">
+                        <div class="gallery__div--info">
+                            <svg class="gallery__svg"></svg>
+                            <a class="gallery__link">Узнай, что на мне</a>
+                        </div>
+                        <div class="gallery__div--like">
+                            <svg class="gallery__svg"></svg>
+                            <span class="gallery__span--like">200</span>
+                        </div>
+                    </li>
+                    <li class="gallery__item">
+                        <img src="img/img5.jpg" class="gallery__img" width="200px">
+                        <div class="gallery__div--info">
+                            <svg class="gallery__svg"></svg>
+                            <a class="gallery__link">Узнай, что на мне</a>
+                        </div>
+                        <div class="gallery__div--like">
+                            <svg class="gallery__svg"></svg>
+                            <span class="gallery__span--like">200</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
     </body>
+    <footer class="page__footer">
+        <section class="info">
+            <div class="info__div">
+                <h2 class="info__title">Покупателям</h2>
+                <ul class="info__list--info">
+                    <li class="info__item">Каталог</li>
+                    <li class="info__item">Акции</li>
+                    <li class="info__item">Бренды</li>
+                </ul>
+            </div>
+            <div class="info__div">
+                <h2 class="info__title">О нас</h2>
+                <ul class="info__list--about-us">
+                    <li class="info__item">О компании</li>
+                    <li class="info__item">Новости</li>
+                    <li class="info__item">Команда</li>
+                </ul>
+            </div>
+        </section>
+        <form class="form">            
+            <fieldset class="form__email">
+                <legend class="form__title">Узнайте первыми о новинках и акциях</legend>
+                <input class="form__input--email" type="email" name="form__email" placeholder="Адрес электронной почты">
+            </fieldset>
+            <button class="form__button">Подписаться</button>
+        </form>
+    </footer>
