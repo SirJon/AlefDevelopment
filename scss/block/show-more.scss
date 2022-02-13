@@ -1,0 +1,22 @@
+.show-more{    
+    width: 375px;
+    margin: 0 auto 55px;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+.show-more__link{
+    color: #333333;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        bottom: 3px;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: #333333;
+    }
+}

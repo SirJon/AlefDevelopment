@@ -1,0 +1,38 @@
+.gallery{
+    width: 375px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.gallery__list{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 9px;
+    list-style: none;
+    position: relative;
+}
+
+.gallery__item{
+    display: flex;
+}
+
+.gallery__item--big-photo{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery__img{
+    width: 100%;
+}
+
+.gallery__div--info{
+    display: none;
+}
+
+.gallery__div--like{
+    display: none;
+}

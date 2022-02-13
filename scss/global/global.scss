@@ -8,3 +8,35 @@
     border: 0;
     clip: rect(0 0 0 0)
 }
+
+.border{
+    border: 1px solid tomato;
+}
+
+.page{
+    font-family: "OpenSans", Arial, sans-serif;    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333333;
+    letter-spacing: 0.04em;
+
+    margin: 0;
+    padding: 0;
+}
+
+.page__body{
+    margin: 0;
+    padding: 0;
+}
+
+.page__main{
+    margin-bottom: 40px;
+}
+
+.page__footer{
+    width: 375px;
+    margin: 0 auto;
+    padding: 0;
+}

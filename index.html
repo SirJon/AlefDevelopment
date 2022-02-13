@@ -7,15 +7,15 @@
     </head>
     <body class="page__body">
         <header class="header">
-            <nav class="header__nav user-nav">
+            <nav class="header__nav user-nav user-nav--closed user-nav--nojs">
                 <ul class="user-nav__list">
-                    <li class="user-nav__item">
-                        <a class="user-nav__link" href="#">
+                    <li class="user-nav__item user-nav__item--logo ">
+                        <a class="user-nav__link user-nav__link--logo user-nav__link--open" href="#">
                             <span class="user-nav__logo">logo</span>
                         </a>
                     </li>
-                    <li class="user-nav__item">
-                        <a class="user-nav__link" href="#">
+                    <li class="user-nav__item user-nav__item--icon ">
+                        <a class="user-nav__link user-nav__link--open" href="#">
                             <svg class="user-nav__svg--user" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <circle cx="8.45945" cy="4.18919" r="3.68919" stroke="#333333"/>
                                 <path d="M0.5 15.3379H15.5" stroke="#333333"/>
@@ -23,8 +23,8 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="user-nav__item">
-                        <a class="user-nav__link" href="#">
+                    <li class="user-nav__item user-nav__item--icon ">
+                        <a class="user-nav__link user-nav__link--open" href="#">
                             <svg class="user-nav__svg--like" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7.89989 3.0948C6.69969 -2.52108 -2.59131 1.90389 1.76025 7.60175C6.11181 13.2996 8.3999 15.4908 8.3999 15.4908" stroke="#333333"/>
                                 <path d="M7.89409 3.0948C9.09429 -2.52108 18.7304 1.90389 14.3788 7.60175C10.0272 13.2996 7.69995 15.5 7.69995 15.5" stroke="#333333"/>
@@ -32,32 +32,32 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="user-nav__item">
-                        <a class="user-nav__link" href="#">
+                    <li class="user-nav__item user-nav__item--icon ">
+                        <a class="user-nav__link user-nav__link--open" href="#">
                             <svg class="user-nav__svg--basket" width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M1.25468 7.56595C1.13958 6.11201 2.2884 4.86865 3.74689 4.86865H12.2531C13.7116 4.86865 14.8604 6.11201 14.7453 7.56595L14.2203 14.1975C14.1174 15.4977 13.0323 16.5002 11.7281 16.5002H4.27189C2.96769 16.5002 1.88261 15.4977 1.77968 14.1975L1.25468 7.56595Z" stroke="#333333"/>
                                 <path d="M4.00005 9.5C4.00005 9.5 3.78335 1 8.00007 1C12.2168 1 12.0001 9.5 12.0001 9.5" stroke="#333333"/>
                             </svg>
                         </a>
                     </li>
-                    <li class="user-nav__item">
-                        <button class="user-nav__button"></button>
+                    <li class="user-nav__item user-nav__item--icon">
+                        <button class="user-nav__button" type="button"><span class="visually-hidden">Открыть меню</span></button>
                     </li>
                 </ul>
             </nav>
-            <nav class="header__nav main-nav">
+            <nav class="header__nav main-nav main-nav--closed main-nav--nojs">
                 <ul class="main-nav__list">
-                    <li class="user-nav__item">
-                        <a class="user-nav__link" href="#">Постельное белье</a>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Постельное белье</a>
                     </li>
-                    <li class="user-nav__item">
-                        <a class="user-nav__link" href="#">Одежда для дома</a>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Одежда для дома</a>
                     </li>
-                    <li class="user-nav__item">
-                        <a class="user-nav__link" href="#">Одежда для улицы</a>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Одежда для улицы</a>
                     </li>
-                    <li class="user-nav__item">
-                        <a class="user-nav__link" href="#">Выход</a>
+                    <li class="main-nav__item">
+                        <a class="main-nav__link" href="#">Выход</a>
                     </li>
                 </ul>
             </nav>
@@ -66,11 +66,11 @@
         <main class="page__main">
             <h1 class="page__title visually-hidden">Магазин одежды</h1>
             <section class="product">
-                <img class="product__img--big-picture" src="img/picture1.jpeg" width="70px">
-                <nav class="product__nav">
+                <img class="product__img--big-picture" src="img/picture1.jpeg" width="686px">
+                <nav class="product__nav product__nav--nojs">
                     <ul class="product__list">
-                        <li class="product__item">
-                            <img class="product__img--small-picture" src="img/picture1.jpeg" width="70px">
+                        <li class="product__item ">
+                            <img class="product__img--small-picture product__img--activ" src="img/picture1.jpeg" width="70px">
                         </li>
                         <li class="product__item">
                             <img class="product__img--small-picture" src="img/picture2.jpeg" width="70px">
@@ -87,19 +87,35 @@
                     </ul>
                 </nav>
                 <h2 class="product__title">Пижама для девочек</h2>
-                <span class="product__span--vendor-code"></span>
+                <span class="product__span--vendor-code">Арт. 02765/46</span>
                 <div class="product__reviews">
                     <h3 class="product__title--reviews">Отзывы</h3>
-                    <svg class="product__svg--rating">4 звезды</svg>
-                    <span class="product__span--reviews">14 отзывов</span>
-                    <a class="product__button" href="#">Все отзывы</a>
+                    <div class="product__stars">
+                        <img class="product__svg--star" src="svg/blackStar.svg" width="10" height="10"/>
+                        <img class="product__svg--star" src="svg/blackStar.svg" width="10" height="10"/>
+                        <img class="product__svg--star" src="svg/blackStar.svg" width="10" height="10"/>
+                        <img class="product__svg--star" src="svg/blackStar.svg" width="10" height="10"/>
+                        <img class="product__svg--star" src="svg/whiteStar.svg" width="10" height="10"/>                            
+                    </div>
+                    <a class="product__link--reviews">
+                        <span class="product__span--reviews">14 отзывов</span>
+                        <svg class="product__svg--arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 1L12 8L4 14.5" stroke="#333333"/>
+                        </svg>
+                    </a>
                 </div>
                 <div class="pruduct__price">
-                    <span class="product__span--new-price"></span>
-                    <span class="product__span--old-price"></span>
-                    <a class="product__button" href="#">Все скидки</a>
-                    <span class="product__span--sale">скидка -36%</span>
-                    <span class="product__span--promotion">акция -20%</span>
+                    <div class="product__price--cost">
+                        <span class="product__span--new-price">800 ₽</span>
+                        <span class="product__span--old-price">1500 ₽</span>
+                        <svg class="product__svg--arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M4 1L12 8L4 14.5" stroke="#333333"/>
+                        </svg>
+                    </div>
+                    <div class="product__price--sale">
+                        <span class="product__span--sale">скидка -36%</span>
+                        <span class="product__span--sale">акция -20%</span>
+                    </div>
                 </div>
                 <select class="product__select">
                     <option selected="selected">Выбрать размер</option>
@@ -109,89 +125,148 @@
                     <option value="L">L</option>
                     <option value="XL">XL</option>
                 </select>
-                <a class="product__link--size" href="#">Определить размер</a>
+                <a class="product__link--border-bottom product__link--size" href="#">Определить размер</a>
                 <div class="product__quantity-inner">        
-                    <button class="product__button--minus">-</button>
+                    <button class="product__button--quantity-inner">-</button>
                     <input type="text" class="product__input--quantity-inner" value="1" data-max-count="20">
-                    <button class="product__button--plus">+</button>
+                    <button class="product__button--quantity-inner">+</button>
                 </div>
                 <div class="product__shop">
-                    <button class="product__button--add-basket">Добавить в корзину</button>
-                    <button class="product__button--add-favorites">
-                        <svg class="product__svg--favorites"></svg>
+                    <button class="product__button--shop product__button--add-basket">Добавить в корзину</button>
+                    <button class="product__button--shop product__button--add-favorites">
+                        <svg class="product__svg--favorites" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M7.89989 3.13874C6.69969 -2.47713 -2.59131 1.94784 1.76025 7.6457C6.11181 13.3436 8.3999 15.5348 8.3999 15.5348" stroke="white"/>
+                            <path d="M7.89409 3.13874C9.09429 -2.47713 18.7304 1.94784 14.3788 7.6457C10.0272 13.3436 7.69995 15.5439 7.69995 15.5439" stroke="white"/>
+                            <path d="M7.39099 2.75146L8.4043 2.75152L8.38337 3.28474H7.39099V2.75146Z" fill="white"/>
+                        </svg>
                     </button>
                 </div>
-                <a class="product__link--one-click" href="#">Купить в 1 клик</a>
+                <a class="product__link--border-bottom product__link--one-click" href="#">Купить в 1 клик</a>
                 <ul class="product__list--info">
-                    <li class="product__item--description">
-                        <svg class="product__svg--description"></svg>
-                        <a class="product__link--description" href="#"></a>
+                    <li class="product__item--info">
+                        <svg class="product__svg--info" width="15" height="15" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="8" cy="8.08789" r="7" stroke="#333333"/>
+                            <path d="M4 6.08789C4.24928 6.08789 6.75787 4.58789 6.75787 4.58789H8.00429H9.25071C9.25071 4.58789 11.7507 6.08789 12 6.08789" stroke="#333333"/>
+                            <path d="M4.01577 5.48072L4.01576 7.26595L5.76075 7.56349L5.76075 12.0265" stroke="#333333"/>
+                            <path d="M11.9842 5.48072L11.9842 7.26595L10.2393 7.56349L10.2478 12.0265" stroke="#333333"/>
+                            <line x1="5.51147" y1="11.5264" x2="10.4971" y2="11.5264" stroke="#333333"/>
+                            <path d="M6.50854 4.58789C6.50854 4.58789 7.00711 6.37311 8.00425 6.37311C9.00138 6.37311 9.49995 4.58789 9.49995 4.58789" stroke="#333333"/>
+                        </svg>
+                        <a class="product__link--border-bottom product__link--info" href="#">Описание товара</a>
                     </li>
-                    <li class="product__item--delivery">
-                        <svg class="product__svg--delivery"></svg>
-                        <a class="product__link--delivery" href="#"></a>
+                    <li class="product__item--info">
+                        <svg class="product__svg--info" width="16" height="16" viewBox="0 0 18 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="9" cy="9.08789" r="7" fill="white" stroke="#333333"/>
+                            <path d="M8.55457 4.58789L8.55456 9.79402L12.5 12.0879" stroke="#333333"/>
+                        </svg>                            
+                        <a class=" product__link--border-bottom product__link--info" href="#">Доставка и возврат</a>
                     </li>
-                    <li class="product__item--payment">
-                        <svg class="product__svg--payment"></svg>
-                        <a class="product__link--payment" href="#"></a>
+                    <li class="product__item--info">
+                        <svg class="product__svg--info product__svg--cart" width="14" height="11" viewBox="0 0 14 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="0.5" y="0.587891" width="13" height="9" rx="0.5" stroke="#333333"/>
+                            <rect x="1" y="3.08789" width="12" height="2" fill="#333333"/>
+                        </svg>
+                        <a class="product__link--border-bottom product__link--info" href="#">Способ оплаты</a>
                     </li>
                 </ul>
             </section>
-            <a class="show-more">Посмотреть все стили</a>
+            <div class="show-more">
+                <a class="show-more__link" href="#">Посмотреть все стили</a>
+            </div>
             <section class="gallery">
                 <ul class="gallery__list">
-                    <li class="gallery__item">
+                    <li class="gallery__item gallery__item--big-photo">
                         <img src="img/img1.jpg" class="gallery__img" width="200px">
                         <div class="gallery__div--info">
-                            <svg class="gallery__svg"></svg>
+                            <svg class="gallery__svg" width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.752161 10.9953C0.638177 9.54198 1.78674 8.2998 3.24451 8.2998H28.7555C30.2133 8.2998 31.3618 9.54198 31.2478 10.9953L29.5851 32.1953C29.4831 33.4962 28.3976 34.4998 27.0927 34.4998H4.90725C3.60235 34.4998 2.51694 33.4962 2.41491 32.1953L0.752161 10.9953Z" stroke="white"/>
+                                <path d="M7.004 18.4857C7.004 18.4857 6.54373 1 15.5 1C24.4563 1 23.996 18.4857 23.996 18.4857" stroke="white"/>
+                            </svg>
                             <a class="gallery__link">Узнай, что на мне</a>
                         </div>
                         <div class="gallery__div--like">
-                            <svg class="gallery__svg"></svg>
+                            <svg class="gallery__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.42873 3.25725L9.76116 1.03654L13.1965 1.46595L14.5 3.63849V6.32062L8.01449 14.1959L1.93878 6.2507L1.05633 4.04458L2.34555 1.89588L5.35443 0.606363L7.61587 3.32009L8.06654 3.86089L8.42873 3.25725Z" fill="white" stroke="white"/>
+                                <path d="M7.9 3.0948C6.6998 -2.52108 -2.59121 1.90389 1.76035 7.60175C6.11191 13.2996 8.40001 15.4908 8.40001 15.4908" stroke="white"/>
+                                <path d="M7.89413 3.0948C9.09434 -2.52108 18.7304 1.90389 14.3788 7.60175C10.0273 13.2996 7.7 15.5 7.7 15.5" stroke="white"/>
+                                <path d="M7.39098 2.70752L8.40429 2.70757L8.38335 3.24079H7.39098V2.70752Z" fill="white"/>
+                            </svg>
                             <span class="gallery__span--like">200</span>
                         </div>
                     </li>
                     <li class="gallery__item">
                         <img src="img/img2.jpg" class="gallery__img" width="200px">
                         <div class="gallery__div--info">
-                            <svg class="gallery__svg"></svg>
+                            <svg class="gallery__svg" width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.752161 10.9953C0.638177 9.54198 1.78674 8.2998 3.24451 8.2998H28.7555C30.2133 8.2998 31.3618 9.54198 31.2478 10.9953L29.5851 32.1953C29.4831 33.4962 28.3976 34.4998 27.0927 34.4998H4.90725C3.60235 34.4998 2.51694 33.4962 2.41491 32.1953L0.752161 10.9953Z" stroke="white"/>
+                                <path d="M7.004 18.4857C7.004 18.4857 6.54373 1 15.5 1C24.4563 1 23.996 18.4857 23.996 18.4857" stroke="white"/>
+                            </svg>
                             <a class="gallery__link">Узнай, что на мне</a>
                         </div>
                         <div class="gallery__div--like">
-                            <svg class="gallery__svg"></svg>
+                            <svg class="gallery__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.42873 3.25725L9.76116 1.03654L13.1965 1.46595L14.5 3.63849V6.32062L8.01449 14.1959L1.93878 6.2507L1.05633 4.04458L2.34555 1.89588L5.35443 0.606363L7.61587 3.32009L8.06654 3.86089L8.42873 3.25725Z" fill="white" stroke="white"/>
+                                <path d="M7.9 3.0948C6.6998 -2.52108 -2.59121 1.90389 1.76035 7.60175C6.11191 13.2996 8.40001 15.4908 8.40001 15.4908" stroke="white"/>
+                                <path d="M7.89413 3.0948C9.09434 -2.52108 18.7304 1.90389 14.3788 7.60175C10.0273 13.2996 7.7 15.5 7.7 15.5" stroke="white"/>
+                                <path d="M7.39098 2.70752L8.40429 2.70757L8.38335 3.24079H7.39098V2.70752Z" fill="white"/>
+                            </svg>
                             <span class="gallery__span--like">200</span>
                         </div>
                     </li>
                     <li class="gallery__item">
                         <img src="img/img3.jpg" class="gallery__img" width="200px">
                         <div class="gallery__div--info">
-                            <svg class="gallery__svg"></svg>
+                            <svg class="gallery__svg" width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.752161 10.9953C0.638177 9.54198 1.78674 8.2998 3.24451 8.2998H28.7555C30.2133 8.2998 31.3618 9.54198 31.2478 10.9953L29.5851 32.1953C29.4831 33.4962 28.3976 34.4998 27.0927 34.4998H4.90725C3.60235 34.4998 2.51694 33.4962 2.41491 32.1953L0.752161 10.9953Z" stroke="white"/>
+                                <path d="M7.004 18.4857C7.004 18.4857 6.54373 1 15.5 1C24.4563 1 23.996 18.4857 23.996 18.4857" stroke="white"/>
+                            </svg>
                             <a class="gallery__link">Узнай, что на мне</a>
                         </div>
                         <div class="gallery__div--like">
-                            <svg class="gallery__svg"></svg>
+                            <svg class="gallery__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.42873 3.25725L9.76116 1.03654L13.1965 1.46595L14.5 3.63849V6.32062L8.01449 14.1959L1.93878 6.2507L1.05633 4.04458L2.34555 1.89588L5.35443 0.606363L7.61587 3.32009L8.06654 3.86089L8.42873 3.25725Z" fill="white" stroke="white"/>
+                                <path d="M7.9 3.0948C6.6998 -2.52108 -2.59121 1.90389 1.76035 7.60175C6.11191 13.2996 8.40001 15.4908 8.40001 15.4908" stroke="white"/>
+                                <path d="M7.89413 3.0948C9.09434 -2.52108 18.7304 1.90389 14.3788 7.60175C10.0273 13.2996 7.7 15.5 7.7 15.5" stroke="white"/>
+                                <path d="M7.39098 2.70752L8.40429 2.70757L8.38335 3.24079H7.39098V2.70752Z" fill="white"/>
+                            </svg>
                             <span class="gallery__span--like">200</span>
                         </div>
                     </li>
                     <li class="gallery__item">
                         <img src="img/img4.jpg" class="gallery__img" width="200px">
                         <div class="gallery__div--info">
-                            <svg class="gallery__svg"></svg>
+                            <svg class="gallery__svg" width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.752161 10.9953C0.638177 9.54198 1.78674 8.2998 3.24451 8.2998H28.7555C30.2133 8.2998 31.3618 9.54198 31.2478 10.9953L29.5851 32.1953C29.4831 33.4962 28.3976 34.4998 27.0927 34.4998H4.90725C3.60235 34.4998 2.51694 33.4962 2.41491 32.1953L0.752161 10.9953Z" stroke="white"/>
+                                <path d="M7.004 18.4857C7.004 18.4857 6.54373 1 15.5 1C24.4563 1 23.996 18.4857 23.996 18.4857" stroke="white"/>
+                            </svg>
                             <a class="gallery__link">Узнай, что на мне</a>
                         </div>
                         <div class="gallery__div--like">
-                            <svg class="gallery__svg"></svg>
+                            <svg class="gallery__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.42873 3.25725L9.76116 1.03654L13.1965 1.46595L14.5 3.63849V6.32062L8.01449 14.1959L1.93878 6.2507L1.05633 4.04458L2.34555 1.89588L5.35443 0.606363L7.61587 3.32009L8.06654 3.86089L8.42873 3.25725Z" fill="white" stroke="white"/>
+                                <path d="M7.9 3.0948C6.6998 -2.52108 -2.59121 1.90389 1.76035 7.60175C6.11191 13.2996 8.40001 15.4908 8.40001 15.4908" stroke="white"/>
+                                <path d="M7.89413 3.0948C9.09434 -2.52108 18.7304 1.90389 14.3788 7.60175C10.0273 13.2996 7.7 15.5 7.7 15.5" stroke="white"/>
+                                <path d="M7.39098 2.70752L8.40429 2.70757L8.38335 3.24079H7.39098V2.70752Z" fill="white"/>
+                            </svg>
                             <span class="gallery__span--like">200</span>
                         </div>
                     </li>
                     <li class="gallery__item">
                         <img src="img/img5.jpg" class="gallery__img" width="200px">
                         <div class="gallery__div--info">
-                            <svg class="gallery__svg"></svg>
+                            <svg class="gallery__svg" width="32" height="35" viewBox="0 0 32 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.752161 10.9953C0.638177 9.54198 1.78674 8.2998 3.24451 8.2998H28.7555C30.2133 8.2998 31.3618 9.54198 31.2478 10.9953L29.5851 32.1953C29.4831 33.4962 28.3976 34.4998 27.0927 34.4998H4.90725C3.60235 34.4998 2.51694 33.4962 2.41491 32.1953L0.752161 10.9953Z" stroke="white"/>
+                                <path d="M7.004 18.4857C7.004 18.4857 6.54373 1 15.5 1C24.4563 1 23.996 18.4857 23.996 18.4857" stroke="white"/>
+                            </svg>
                             <a class="gallery__link">Узнай, что на мне</a>
                         </div>
                         <div class="gallery__div--like">
-                            <svg class="gallery__svg"></svg>
+                            <svg class="gallery__svg" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.42873 3.25725L9.76116 1.03654L13.1965 1.46595L14.5 3.63849V6.32062L8.01449 14.1959L1.93878 6.2507L1.05633 4.04458L2.34555 1.89588L5.35443 0.606363L7.61587 3.32009L8.06654 3.86089L8.42873 3.25725Z" fill="white" stroke="white"/>
+                                <path d="M7.9 3.0948C6.6998 -2.52108 -2.59121 1.90389 1.76035 7.60175C6.11191 13.2996 8.40001 15.4908 8.40001 15.4908" stroke="white"/>
+                                <path d="M7.89413 3.0948C9.09434 -2.52108 18.7304 1.90389 14.3788 7.60175C10.0273 13.2996 7.7 15.5 7.7 15.5" stroke="white"/>
+                                <path d="M7.39098 2.70752L8.40429 2.70757L8.38335 3.24079H7.39098V2.70752Z" fill="white"/>
+                            </svg>
                             <span class="gallery__span--like">200</span>
                         </div>
                     </li>
@@ -203,26 +278,38 @@
         <section class="info">
             <div class="info__div">
                 <h2 class="info__title">Покупателям</h2>
-                <ul class="info__list--info">
-                    <li class="info__item">Каталог</li>
-                    <li class="info__item">Акции</li>
-                    <li class="info__item">Бренды</li>
+                <ul class="info__list">
+                    <li class="info__item">
+                        <a class="info__link" href="#">Каталог</a>
+                    </li>
+                    <li class="info__item">
+                        <a class="info__link" href="#">Акции</a>
+                    </li>
+                    <li class="info__item">
+                        <a class="info__link" href="#">Бренды</a>
+                    </li>
                 </ul>
             </div>
             <div class="info__div">
                 <h2 class="info__title">О нас</h2>
-                <ul class="info__list--about-us">
-                    <li class="info__item">О компании</li>
-                    <li class="info__item">Новости</li>
-                    <li class="info__item">Команда</li>
+                <ul class="info__list">
+                    <li class="info__item">
+                        <a class="info__link" href="#">О компании</a>
+                    </li>
+                    <li class="info__item">
+                        <a class="info__link" href="#">Новости</a>
+                    </li>
+                    <li class="info__item">
+                        <a class="info__link" href="#">Команда</a>
+                    </li>
                 </ul>
             </div>
         </section>
         <form class="form">            
             <fieldset class="form__email">
-                <legend class="form__title">Узнайте первыми о новинках и акциях</legend>
-                <input class="form__input--email" type="email" name="form__email" placeholder="Адрес электронной почты">
+                <legend class="form__title">Узнайте первыми о<br class="form__br"> новинках и акциях</legend>
+                <input class="form__input--email" type="email" name="form__email" placeholder="Адрес электронной почты">                
+                <button class="form__button" type="submit">Подписаться</button>
             </fieldset>
-            <button class="form__button">Подписаться</button>
         </form>
     </footer>
