@@ -1,4 +1,3 @@
-
 .main-nav{
     margin: 0;
     padding: 0 30px;
@@ -7,6 +6,9 @@
     width: 375px;
     box-sizing: border-box;
     background-color: #ffffff;
+    @media(min-width: $desktop-width){
+        display: none;
+    }
 }
 
 .main-nav--closed{

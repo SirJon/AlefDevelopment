@@ -1,7 +1,14 @@
 .form{
-    margin: 0 20px 50px;
-    display: flex;
-    flex-direction: column;
+    margin: 0 20px;
+    @media(max-width: $desktop-width){
+        display: flex;
+        flex-direction: column;
+    }
+    @media(min-width: $desktop-width){
+        margin: 0;
+        width: 450px;
+        margin: 0 auto;
+    }
 }
 
 .form__email{
@@ -33,6 +40,7 @@
 }
 
 .form__button{
+    cursor: pointer;
     background-color: #ffffff;
     border: 1px solid #333333;
     padding: 8px 28px;

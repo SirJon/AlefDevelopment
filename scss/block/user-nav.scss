@@ -1,5 +1,10 @@
 .user-nav{
+    margin: 0 auto;
     padding: 0 23px 0 20px;
+    @media(min-width: $desktop-width){
+        margin: 0;
+        padding: 0;
+    }
 }
 
 .user-nav__list{
@@ -12,6 +17,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media(min-width: $desktop-width){
+        min-height: 40px;
+    }
 }
 
 .user-nav__item--logo{
@@ -21,6 +29,12 @@
 .user-nav__item--icon{
     margin-left: 35px;
     position: relative;
+}
+
+.user-nav__item--button{
+    @media(min-width: $desktop-width){
+        display: none;
+    }
 }
 
 .user-nav__link--logo{

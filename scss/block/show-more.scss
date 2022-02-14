@@ -4,6 +4,9 @@
     padding: 0;
     display: block;
     text-align: center;
+    @media(min-width: $desktop-width){
+        margin-bottom: 32px;
+    }
 }
 .show-more__link{
     color: #333333;
