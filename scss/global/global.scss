@@ -51,11 +51,7 @@
         width: auto;
         display: grid;
         grid-template-columns: 1fr 1fr;
+        grid-gap: 9px;
         margin-bottom: 70px;
     }
-}
-
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
 }

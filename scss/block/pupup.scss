@@ -1,0 +1,27 @@
+.pupup{
+    position: fixed;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    min-height: 60px;
+    z-index: 2;
+
+    background-color: #333333;
+    color: #fff;
+    border-radius: 5px;
+
+    justify-content: center;
+    align-items: center;
+
+    display: none;
+}
+
+.pupup--show{
+    display: flex;
+}
+
+.pupup__span{
+    padding: 10px;
+    text-align: center;
+}

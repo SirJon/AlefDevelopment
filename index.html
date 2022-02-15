@@ -66,26 +66,28 @@
         <main class="page__main page__main--nojs">
             <h1 class="page__title visually-hidden">Магазин одежды</h1>
             <section class="product">
-                <img class="product__img--big-picture" src="img/picture1.jpeg" width="686px">
-                <nav class="product__nav product__nav--nojs">
-                    <ul class="product__list">
-                        <li class="product__item ">
-                            <img class="product__img--small-picture product__img--activ" src="img/picture1.jpeg" width="70px">
-                        </li>
-                        <li class="product__item">
-                            <img class="product__img--small-picture" src="img/picture2.jpeg" width="70px">
-                        </li>
-                        <li class="product__item">
-                            <img class="product__img--small-picture" src="img/picture3.jpeg" width="70px">
-                        </li>
-                        <li class="product__item">
-                            <img class="product__img--small-picture" src="img/picture4.jpeg" width="70px">
-                        </li>
-                        <li class="product__item">
-                            <img class="product__img--small-picture" src="img/picture5.jpeg" width="70px">
-                        </li>
-                    </ul>
-                </nav>
+                <div class="product__wrapper--picture">
+                    <img class="product__img--big-picture" src="img/picture1.jpeg" width="686px">
+                    <nav class="product__nav product__nav--nojs">
+                        <ul class="product__list">
+                            <li class="product__item ">
+                                <img class="product__img--small-picture product__img--activ" src="img/picture1.jpeg" width="70px">
+                            </li>
+                            <li class="product__item">
+                                <img class="product__img--small-picture" src="img/picture2.jpeg" width="70px">
+                            </li>
+                            <li class="product__item">
+                                <img class="product__img--small-picture" src="img/picture3.jpeg" width="70px">
+                            </li>
+                            <li class="product__item">
+                                <img class="product__img--small-picture" src="img/picture4.jpeg" width="70px">
+                            </li>
+                            <li class="product__item">
+                                <img class="product__img--small-picture" src="img/picture5.jpeg" width="70px">
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
                 <div class="product__wrapper">
                     <h2 class="product__title">Пижама для девочек</h2>
                     <span class="product__span--vendor-code">Арт. 02765/46</span>
@@ -130,7 +132,7 @@
                     <div class="product__wrapper--basket">
                         <div class="product__quantity-inner">        
                             <button class="product__button--quantity-inner" id="button--minus">-</button>
-                            <input type="number" class="product__input--quantity-inner" value="1" data-max-count="20" id="input">
+                            <input type="number" class="product__input--quantity-inner" value="1" id="input">
                             <button class="product__button--quantity-inner" id="button--plus">+</button>
                         </div>
                         <div class="product__shop">
@@ -342,19 +344,19 @@
         <form class="form">            
             <fieldset class="form__email">
                 <legend class="form__title">Узнайте первыми о<br class="form__br"> новинках и акциях</legend>
-                <input class="form__input--email" type="email" name="form__email" placeholder="Адрес электронной почты">                
+                <input class="form__input--email" type="email" name="form__email" placeholder="Адрес электронной почты" id="email">                
                 <button class="form__button" type="submit">Подписаться</button>
             </fieldset>
         </form>
-    </footer>
+    </footer>    
+
+    <div class="pupup" id="pupup--basket">
+        <span class="pupup__span">Товар <b id="product--basket">Наименование товара</b> в количестве <b id="product-number--basket">кол-во товара</b> единиц добавлен в корзину</span>
+    </div>
+
+    <div class="pupup" id="pupup--favorites">
+        <span class="pupup__span">Товар <b id="product--favorites">Пижама для девочек</b> в количестве <b id="product-number--favorites">5</b> единиц добавлен в избранное</span>
+    </div>
 </html>
 
 <script src="js/js.js"></script>
-
-<div class="pupup__basket">
-    <span class="pupup__span">Добавлено в корзину</span>
-</div>
-
-<div class="pupup__basket">
-    <span class="pupup__span">Добавлено в корзину</span>
-</div>

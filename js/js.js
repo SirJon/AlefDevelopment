@@ -1,3 +1,4 @@
+//Убираем классы Nojs
 var userNav = document.querySelector(".header__nav");
 userNav.classList.remove("user-nav--nojs");
 
@@ -13,6 +14,10 @@ header.classList.remove("header--nojs");
 var main = document.querySelector(".page__main");
 main.classList.remove("page__main--nojs");
 
+var productNav = document.querySelector(".product__nav");
+productNav.classList.remove("product__nav--nojs");
+
+//Открытие закрытие меню
 function closeOpen(){
     if (toogleFlag){
         userNav.classList.remove("user-nav--closed");
@@ -44,8 +49,8 @@ function toggle(evt){
 
 toggleButton.addEventListener("click", toggle);
 
-var productNav = document.querySelector(".product__nav");
-productNav.classList.remove("product__nav--nojs");
+
+//Переключение фотографий товара
 
 var productBig = document.querySelector(".product__img--big-picture");
 var productSmall = document.querySelectorAll(".product__img--small-picture");
@@ -69,18 +74,26 @@ for(let i=0; i<productSmall.length; i++){
     })
 }
 
+//Инпут кол-ва товаров
+
 var buttonMinus = document.querySelector("#button--minus");
 var buttonPlus = document.querySelector("#button--plus");
 var input = document.querySelector("#input");
 
 function inputMax(){
-    input.value > 20 ? input.value = 20 : none;
+    if (input.value == ""){
+        input.value = 1;
+    } else{
+        if (input.value > 20){
+            input.value = 20;
+        } else{
+            input.value < 20 ? input.value = 1 : none;
+        }
+    }
     disabled();
 }
 
 input.addEventListener("change", inputMax);
-
-
 
 buttonMinus.disabled = true;
 function disabled(){
@@ -102,6 +115,8 @@ buttonMinus.addEventListener("click", inputMinus);
 buttonPlus.addEventListener("click", inputPlus);
 
 
+//Скрыть/показать меню при скролле
+
 var scrollPrev = 0;
 
 function scrollMenu(){    
@@ -115,4 +130,64 @@ function scrollMenu(){
 	scrollPrev = scrolled;
 }
 
-window.addEventListener("scroll", scrollMenu)
+window.addEventListener("scroll", scrollMenu);
+
+//Pupup корзина и избранное
+
+var buttonBasket = document.querySelector(".product__button--add-basket");
+var pupupBasket = document.querySelector("#pupup--basket");
+var buttonFavorites = document.querySelector(".product__button--add-favorites");
+var pupupFavorites = document.querySelector("#pupup--favorites");
+
+var productName = document.querySelector(".product__title")
+var pupupProductNameBasket = document.querySelector("#product--basket");
+var pupupProductNameFavorites = document.querySelector("#product--favorites");
+var pupupProductNumberBasket = document.querySelector("#product-number--basket");
+var pupupProductNumberFavorites = document.querySelector("#product-number--favorites");
+
+
+function hidePupupBasket(){
+    pupupBasket.classList.remove("pupup--show");
+}
+
+function hidePupupFavorites(){
+    pupupFavorites.classList.remove("pupup--show");
+}
+
+function pupupBasketShow(evt){
+    evt.preventDefault();
+    pupupFavorites.classList.remove("pupup--show");
+    pupupBasket.classList.add("pupup--show");
+    pupupProductNameBasket.textContent = productName.textContent;
+    pupupProductNumberBasket.textContent = input.value;
+    setTimeout(hidePupupBasket, 2000);
+}
+
+function pupupFavoritesShow(evt){
+    evt.preventDefault();
+    pupupBasket.classList.remove("pupup--show");
+    pupupFavorites.classList.add("pupup--show");
+    pupupProductNameFavorites.textContent = productName.textContent;
+    pupupProductNumberFavorites.textContent = input.value;
+    setTimeout(hidePupupFavorites, 2000);
+}
+
+buttonBasket.addEventListener("click", pupupBasketShow);
+buttonFavorites.addEventListener("click", pupupFavoritesShow);
+
+//EmailTest
+
+var inputEmail = document.querySelector("#email");
+
+function emailTest(){
+    return(!/^\w+ ([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(inputEmail.value));
+}
+
+inputEmail.addEventListener("change", function(evt){
+    evt.preventDefault();
+    if (inputEmail.validity.typeMismatch){
+        inputEmail.classList.add("form__input--invalid");
+    } else {
+        inputEmail.classList.remove("form__input--invalid");
+    }
+})
