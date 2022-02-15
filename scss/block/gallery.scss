@@ -65,7 +65,27 @@
 
     text-decoration: none;
     color: #ffffff;
+    &:hover{
+        opacity: 0.7;
+    }
+    &:focus{
+        opacity: 0.3;
+    }
 }
+
+
+.gallery__link--album{
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    &:hover{
+        opacity: 0.7;
+    }
+    &:focus{
+        opacity: 0.3;
+    }
+}
+
 .gallery__div--like{
     @media(max-width: $desktop-width){
         display: none;
@@ -83,10 +103,4 @@
 .gallery__span--like{
     color: #ffffff;
     margin-left: 6px;
-}
-
-.gallery__link--album{
-    position: absolute;
-    top: 16px;
-    right: 16px;
 }

@@ -37,6 +37,18 @@
     }
 }
 
+.user-nav__link{
+    &:hover{
+        opacity: 0.7;
+    }
+    &:focus{
+        opacity: 0.3;
+    }
+    &:disabled{
+        opacity: 0.1;
+    }
+}
+
 .user-nav__link--logo{
     color: #000000;
     text-decoration: none;
@@ -53,6 +65,9 @@
     background-color: #ffffff;
     border: none;
     display: block;
+    &:hover{
+        opacity: 0.7;
+    }
 }
 
 .user-nav--closed{
@@ -73,7 +88,7 @@
     }
 }
 
-.user-nav--open{
+.user-nav--opened{
     .user-nav__button{
         width: 15px;
         height: 15px;

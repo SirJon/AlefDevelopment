@@ -37,6 +37,9 @@
     font-family: inherit;
     color: #828282;
     border-bottom: 1px solid #C4C4C4;
+    &:disabled{
+        opacity: 0.1;
+    }
 }
 
 .form__button{
@@ -51,4 +54,14 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 20px;
+    &:hover{
+        background-color: #333333;
+        color: #ffffff;
+    }
+    &:focus{
+        opacity: 0.7;
+    }
+    &:disabled{
+        opacity: 0.1;
+    }
 }

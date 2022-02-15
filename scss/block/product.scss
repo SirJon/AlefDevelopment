@@ -32,11 +32,30 @@
 
 .product__img--big-picture{
     width: 375px;
-    height: 505px;
     display: flex;
     @media(min-width: $desktop-width){
         width: 686px;
         height: auto;
+    }
+}
+
+.product__img--small-picture{
+    width: 40px;
+    margin: 0;
+    padding: 0;
+    opacity: 0.3;
+    @media(min-width: $desktop-width){
+        width: 70px;
+    }
+    &:hover{
+        opacity: 0.7;
+    }
+}
+
+.product__img--activ{
+    opacity: 1;    
+    &:hover{
+        opacity: 1;
     }
 }
 
@@ -62,6 +81,16 @@
     list-style: none;
 }
 
+.product__list--info{
+    list-style: none;
+    margin: 0 0 0 20px;
+    padding: 24px 0 0;
+    border-top: 0.5px solid #C4C4C4;
+    @media(min-width: $desktop-width){
+        margin: 0;
+    }
+}
+
 .product__item{
     cursor: pointer;
     margin: 0 0 4px;
@@ -73,18 +102,12 @@
     }
 }
 
-.product__img--small-picture{
-    width: 40px;
-    margin: 0;
-    padding: 0;
-    opacity: 0.3;
+.product__item--info{
+    position: relative;
     @media(min-width: $desktop-width){
-        width: 70px;
+        margin-bottom: 12px;
     }
-}
 
-.product__img--activ{
-    opacity: 1;
 }
 
 .product__title{
@@ -95,6 +118,11 @@
     @media(min-width: $desktop-width){
         margin: 20px 0 8px;
     }
+}
+
+.product__title--reviews{
+    margin: 0 13px 0 0;
+    padding: 0;
 }
 
 .product__span--vendor-code{
@@ -109,55 +137,8 @@
     }
 }
 
-.product__reviews{
-    margin: 0 0 46px 20px;
-    display: flex;
-    align-items: center;
-    @media(min-width: $desktop-width){
-        margin: 0 0 46px;
-    }
-}
-
-.product__title--reviews{
-    margin: 0 13px 0 0;
-    padding: 0;
-}
-
-.product__stars{
-    margin: 0 5px 0 0;
-    display: flex;
-    cursor: pointer;
-}
-
-.product__svg--star{
-    margin-right: 2px;
-    :nth-last-child(1){
-        margin-right: 0;
-    }
-}
-
-.product__link--reviews{
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-}
-
 .product__span--reviews{
     margin-right: 8px;
-}
-
-.pruduct__price{
-    margin: 0 0 20px 20px;
-    @media(min-width: $desktop-width){
-        margin: 0 0 30px;
-    }
-}
-
-.product__price--cost{
-    display: flex;
-    align-items: center;
-
-    margin: 0 0 16px 0;
 }
 
 .product__span--new-price{
@@ -176,16 +157,119 @@
     margin-right: 20px;
 }
 
-.product__price--sale{
-    margin: 0;
-}
-
 .product__span--sale{
     padding: 2px 6px;
     margin-right: 5px;
     font-size: 12px;
     line-height: 16px;
     border: 1px solid #333333;
+}
+
+.product__reviews{
+    margin: 0 0 46px 20px;
+    display: flex;
+    align-items: center;
+    @media(min-width: $desktop-width){
+        margin: 0 0 46px;
+    }
+}
+
+.product__stars{
+    margin: 0 5px 0 0;
+    display: flex;
+    cursor: pointer;
+}
+
+.product__svg--star{
+    margin-right: 2px;
+    :nth-last-child(1){
+        margin-right: 0;
+    }
+}
+
+.product__svg--info{
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.product__svg--cart{
+    top: 5px;
+    left: 1px;
+}
+
+.product__link--reviews{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: inherit;
+    &:hover{
+        opacity: 0.7;
+    }
+    &:focus{
+        opacity: 0.3;
+    }
+}
+
+.product__link--size{
+    margin: 0 0 40px 20px;
+    @media(min-width: $desktop-width){
+        margin: 0 0 40px;
+        display: block;
+    }
+    &:hover{
+        opacity: 0.7;
+    }
+    &:focus{
+        opacity: 0.3;
+    }
+}
+
+.product__link--border-bottom{    
+    color: #333333;
+    display: inline-block;
+    position: relative;
+}
+
+.product__link--one-click{
+    margin: 0 0 30px 20px;
+    @media(min-width: $desktop-width){
+        margin: 0 0 29px;
+    }
+    &:hover{
+        opacity: 0.7;
+    }
+    &:focus{
+        opacity: 0.3;
+    }
+}
+
+.product__link--info{
+    margin-left: 20px;    
+    &:hover{
+        opacity: 0.7;
+    }
+    &:focus{
+        opacity: 0.3;
+    }
+}
+
+.pruduct__price{
+    margin: 0 0 20px 20px;
+    @media(min-width: $desktop-width){
+        margin: 0 0 30px;
+    }
+}
+
+.product__price--cost{
+    display: flex;
+    align-items: center;
+
+    margin: 0 0 16px 0;
+}
+
+.product__price--sale{
+    margin: 0;
 }
 
 .product__select{
@@ -198,13 +282,8 @@
         margin: 0 0 12px;
         width: 310px;
     }
-}
-
-.product__link--size{
-    margin: 0 0 40px 20px;
-    @media(min-width: $desktop-width){
-        margin: 0 0 40px;
-        display: block;
+    &:disabled{
+        opacity: 0.1;
     }
 }
 
@@ -224,22 +303,12 @@
     border: none;
     font-family: inherit;
     cursor: pointer;
-}
-
-.product__input--quantity-inner{
-    background-color: #F2F2F2;
-    width: 49px;
-    border: none;
-    outline: none;
-    font-family: inherit;
-    text-align: center;
-}
-
-.product__shop{
-    display: flex;
-    margin: 0 0 20px 20px;
-    @media(min-width: $desktop-width){
-        margin: 0;
+    &:hover{
+        opacity: 0.7;
+    }
+    &:disabled{
+        opacity: 0.3;
+        cursor: default;
     }
 }
 
@@ -249,6 +318,15 @@
     height: 44px;
     border: none;
     cursor: pointer;
+    &:hover{
+        opacity: 0.7;
+    }
+    &:focus{
+        opacity: 0.3;
+    }
+    &:disabled{
+        opacity: 0.1;
+    }
 }
 
 .product__button--add-basket{
@@ -261,48 +339,25 @@
     width: 44px;
 }
 
-.product__link--border-bottom{    
-    color: #333333;
-    display: inline-block;
-    position: relative;
-}
-
-.product__link--one-click{
-    margin: 0 0 30px 20px;
-    @media(min-width: $desktop-width){
-        margin: 0 0 29px;
+.product__input--quantity-inner{
+    background-color: #F2F2F2;
+    width: 49px;
+    border: none;
+    outline: none;
+    font-family: inherit;
+    text-align: center;
+    &:hover{
+        opacity: 0.7;
+    }
+    &:focus{
+        opacity: 1;
     }
 }
 
-.product__list--info{
-    list-style: none;
-    margin: 0 0 0 20px;
-    padding: 24px 0 0;
-    border-top: 0.5px solid #C4C4C4;
+.product__shop{
+    display: flex;
+    margin: 0 0 20px 20px;
     @media(min-width: $desktop-width){
         margin: 0;
     }
-}
-
-.product__item--info{
-    position: relative;
-    @media(min-width: $desktop-width){
-        margin-bottom: 12px;
-    }
-
-}
-
-.product__link--info{
-    margin-left: 20px;
-}
-
-.product__svg--info{
-    position: absolute;
-    top: 3px;
-    left: 0;
-}
-
-.product__svg--cart{
-    top: 5px;
-    left: 1px;
 }

@@ -6,7 +6,7 @@
         <title>Детская одежда</title>
     </head>
     <body class="page__body">
-        <header class="header">
+        <header class="header header--nojs">
             <nav class="header__nav user-nav user-nav--closed user-nav--nojs">
                 <ul class="user-nav__list">
                     <li class="user-nav__item user-nav__item--logo ">
@@ -63,7 +63,7 @@
             </nav>
         </header>
 
-        <main class="page__main">
+        <main class="page__main page__main--nojs">
             <h1 class="page__title visually-hidden">Магазин одежды</h1>
             <section class="product">
                 <img class="product__img--big-picture" src="img/picture1.jpeg" width="686px">
@@ -98,7 +98,7 @@
                             <img class="product__svg--star" src="svg/blackStar.svg" width="10" height="10"/>
                             <img class="product__svg--star" src="svg/whiteStar.svg" width="10" height="10"/>                            
                         </div>
-                        <a class="product__link--reviews">
+                        <a class="product__link--reviews" href="#">
                             <span class="product__span--reviews">14 отзывов</span>
                             <svg class="product__svg--arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M4 1L12 8L4 14.5" stroke="#333333"/>
@@ -129,9 +129,9 @@
                     <a class="product__link--border-bottom product__link--size" href="#">Определить размер</a>
                     <div class="product__wrapper--basket">
                         <div class="product__quantity-inner">        
-                            <button class="product__button--quantity-inner">-</button>
-                            <input type="text" class="product__input--quantity-inner" value="1" data-max-count="20">
-                            <button class="product__button--quantity-inner">+</button>
+                            <button class="product__button--quantity-inner" id="button--minus">-</button>
+                            <input type="number" class="product__input--quantity-inner" value="1" data-max-count="20" id="input">
+                            <button class="product__button--quantity-inner" id="button--plus">+</button>
                         </div>
                         <div class="product__shop">
                             <button class="product__button--shop product__button--add-basket">Добавить в корзину</button>
@@ -347,3 +347,14 @@
             </fieldset>
         </form>
     </footer>
+</html>
+
+<script src="js/js.js"></script>
+
+<div class="pupup__basket">
+    <span class="pupup__span">Добавлено в корзину</span>
+</div>
+
+<div class="pupup__basket">
+    <span class="pupup__span">Добавлено в корзину</span>
+</div>
